@@ -1,0 +1,7 @@
+{
+    "400": "No MCP JSON blocks found with BEGIN_KNOWLEDGE/END_KNOWLEDGE",
+    "413": "File size exceeds maximum allowed limit",
+    "415": "Only DOCX files are supported",
+    "422": "Invalid JSON format in MCP blocks",
+    "500": "Internal server error during validation"
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP Validator API</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MCP JSON Validator</h1>
+            
+            
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="error-message" id="errorMessage"></div>
+        
+        <div class="main-content">
+            <div class="upload-section">
+                <h2 class="section-title">Upload Document</h2>
+                
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📁</div>
+                    <div class="upload-text">
+                        <p><strong>Drag & drop your file here</strong></p>
+                        <p>or</p>
+                    </div>
+                    <button class="btn" id="selectFileBtn">Select File</button>
+                    <input type="file" id="fileInput" class="file-input" accept=".pdf,.docx,.txt,.json">
+                </div>
+                
+                <div class="supported-formats">
+                    Supported formats: PDF, DOCX, TXT, JSON
+                </div>
+                
+                <div class="loading" id="loadingIndicator">
+                    <div class="spinner"></div>
+                    <p>Validating your document...</p>
+                </div>
+            </div>
+            
+            <div class="results-section">
+                <h2 class="section-title">Validation Results</h2>
+                
+                <div id="summaryStats" class="summary-stats">
+                    <div class="stat-card">
+                        <div class="stat-value" id="blocksFound">0</div>
+                        <div class="stat-label">Blocks Found</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="validBlocks">0</div>
+                        <div class="stat-label">Valid Blocks</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="invalidBlocks">0</div>
+                        <div class="stat-label">Invalid Blocks</div>
+                    </div>
+                </div>
+                
+                <div id="resultsContainer">
+                    <p>Upload a document to see validation results.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>MCP Validator API &copy; 2025</p>
+        </div>
+    </footer>
+    
+    <script src="../static/script.js"></script>
+</body>
+</html>

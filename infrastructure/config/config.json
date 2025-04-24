@@ -1,0 +1,12 @@
+{
+    "logger": {
+        "enabled": true,
+        "path": {
+            "linux_logger_path": "/var/log/mcp/mcp_log.log",
+            "windows_logger_path": "C:\\ProgramData\\mcp\\logs\\mcp_log.log"
+        }
+    },
+    "file_handling": {
+        "max_file_size": 10485760
+    }
+}
